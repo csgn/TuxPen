@@ -1,6 +1,6 @@
 # TuxPen
 
-![DEMO](blob:https://imgur.com/d96fa83a-3013-4842-9b29-1641076b45cd)
+![DEMO](https://i.imgur.com/J8mMYRW.png)
 
 ## Installation
 ``` bash
