@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="180dd92b-5bc9-47e0-9087-93f6e61dd3ee" name="Default Changelist" comment="" />
+    <list default="true" id="180dd92b-5bc9-47e0-9087-93f6e61dd3ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aRAM07TDXhpwjgLwFQw45kqAYc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,7 +42,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="TuxPen" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="TuxPen" />
       <module name="TuxPen" />
       <method v="2">
@@ -55,7 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586687983117</updated>
       <workItem from="1586687995202" duration="20924000" />
-      <workItem from="1586710322427" duration="2474000" />
+      <workItem from="1586710322427" duration="3096000" />
+      <workItem from="1586714210217" duration="97000" />
     </task>
     <servers />
   </component>
@@ -63,10 +72,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="140" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586688333546">
+    <state x="140" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586714309769">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="140" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1586688333546" />
+    <state x="140" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1586714309769" />
     <state x="490" y="96" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1586701863438">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -75,22 +84,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="415" y="133" width="528" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1586701902723" />
-    <state width="1322" height="184" key="GridCell.Tab.0.bottom" timestamp="1586712186887">
+    <state width="1322" height="184" key="GridCell.Tab.0.bottom" timestamp="1586713756897">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586712186887" />
-    <state width="1322" height="184" key="GridCell.Tab.0.center" timestamp="1586712186882">
+    <state width="1322" height="184" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586713756897" />
+    <state width="1322" height="184" key="GridCell.Tab.0.center" timestamp="1586713756896">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586712186882" />
-    <state width="1322" height="184" key="GridCell.Tab.0.left" timestamp="1586712186878">
+    <state width="1322" height="184" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586713756896" />
+    <state width="1322" height="184" key="GridCell.Tab.0.left" timestamp="1586713756895">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586712186878" />
-    <state width="1322" height="184" key="GridCell.Tab.0.right" timestamp="1586712186886">
+    <state width="1322" height="184" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586713756895" />
+    <state width="1322" height="184" key="GridCell.Tab.0.right" timestamp="1586713756897">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="184" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586712186886" />
+    <state width="1322" height="184" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586713756897" />
     <state width="1322" height="230" key="GridCell.Tab.1.bottom" timestamp="1586694636331">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
