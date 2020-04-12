@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TuxPen:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TuxPen_jar</output-path>
+    <root id="archive" name="TuxPen.jar">
+      <element id="module-output" name="TuxPen" />
+    </root>
+  </artifact>
+</component>
