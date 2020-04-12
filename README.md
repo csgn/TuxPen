@@ -1,4 +1,4 @@
-# 🐧 TuxPen
+# 🐧 Tux Pen
 
 ![GUI](https://i.imgur.com/Nk4SI8l.gif)
 
@@ -10,7 +10,7 @@ git clone https://github.com/async4/TuxPen.git
 >>> Open favorite java ide and import TuxPen project after run and build.
 ```
 
-## 🔌 Usage
+## 🔌 Demo
 ![USAGE](https://i.imgur.com/0kdhvUq.png)
 
 * Trash button not working for now :)
