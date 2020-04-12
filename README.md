@@ -1,6 +1,7 @@
 # TuxPen
 
 ![GUI](https://i.imgur.com/6upVFL4.png)
+* Trash button is not working :)
 
 ## Installation
 ``` bash
