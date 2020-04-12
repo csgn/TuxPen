@@ -7,7 +7,7 @@
 ``` bash
 git clone https://github.com/async4/TuxPen.git
 
-open favorite java ide and build.
+>>> Open favorite java ide and import TuxPen project after run and build.
 ```
 
 ## 🔌 Usage
