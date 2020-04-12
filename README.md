@@ -1,4 +1,4 @@
-# 📝 TuxPen
+# 🐧 TuxPen
 
 ![GUI](https://i.imgur.com/Nk4SI8l.gif)
 
