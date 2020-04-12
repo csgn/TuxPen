@@ -14,4 +14,4 @@ git clone https://github.com/async4/TuxPen.git
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-[gitub.io/TuxPen](https://async4.github.ifor nowo/TuxPen)
+[gitub.io/TuxPen](https://async4.github.io/TuxPen)
