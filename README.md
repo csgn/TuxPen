@@ -1,6 +1,6 @@
 # 📝 TuxPen
 
-![GUI](https://i.imgur.com/6upVFL4.png)
+![GUI](https://i.imgur.com/vs9LqUV.png)
 * Trash button is not working for now :)
 
 ## 📌 Installation 
