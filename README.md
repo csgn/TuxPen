@@ -8,7 +8,7 @@ git clone https://github.com/async4/TuxPen.git
 ```
 
 ## Usage
-![USAGE] (https://i.imgur.com/0kdhvUq.png)
+![USAGE](https://i.imgur.com/0kdhvUq.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
