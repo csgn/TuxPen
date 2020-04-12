@@ -1,6 +1,5 @@
 # TuxPen
 
-![DEMO](https://i.imgur.com/J8mMYRW.png)
 ![DEMO](https://i.imgur.com/6upVFL4.png)
 
 ## Installation
