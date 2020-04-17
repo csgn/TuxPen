@@ -28,7 +28,7 @@ public class CanvasDrawing extends JPanel {
         );
         canvas.add(this);
         canvas.setUndecorated(true);
-        canvas.setBackground(new Color(0.0f, 0.0f, 0.0f, 0.0f));
+        canvas.setBackground(new Color(0.0f, 0.0f, 0.0f, 0.01f));
         canvas.setSize((int) screen_resolution.getWidth()-100, (int) screen_resolution.getHeight());
         canvas.setVisible(true);
     }
