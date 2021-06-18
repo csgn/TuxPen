@@ -1,4 +1,4 @@
 # 🐧 New Tuxpen with pyside6
 
 
-![alpha](ss.png)
+![alpha](docs/demo.png)
