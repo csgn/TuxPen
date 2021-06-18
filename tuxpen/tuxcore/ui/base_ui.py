@@ -12,6 +12,7 @@ from PySide6.QtCore import *  # type: ignore
 from PySide6.QtGui import *  # type: ignore
 from PySide6.QtWidgets import *  # type: ignore
 
+import resources_rc
 
 class Ui_Tuxpen(object):
     def setupUi(self, Tuxpen):
@@ -104,7 +105,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon = QIcon()
-        icon.addFile(u"assets/pen.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/assets/icons/pen.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_pen.setIcon(icon)
         self.button_pen.setIconSize(QSize(24, 24))
 
@@ -126,7 +127,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u"assets/eraser.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/icons/assets/icons/eraser.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_eraser.setIcon(icon1)
         self.button_eraser.setIconSize(QSize(24, 24))
 
@@ -149,19 +150,18 @@ class Ui_Tuxpen(object):
         self.frame_undo.setFrameShadow(QFrame.Raised)
         self.verticalLayout_10 = QVBoxLayout(self.frame_undo)
         self.verticalLayout_10.setObjectName(u"verticalLayout_10")
-        self.button_redo = QPushButton(self.frame_undo)
-        self.button_redo.setObjectName(u"button_redo")
-        self.button_redo.setCursor(QCursor(Qt.PointingHandCursor))
-        self.button_redo.setStyleSheet(u"QPushButton:hover {\n"
+        self.button_undo = QPushButton(self.frame_undo)
+        self.button_undo.setObjectName(u"button_undo")
+        self.button_undo.setCursor(QCursor(Qt.PointingHandCursor))
+        self.button_undo.setStyleSheet(u"QPushButton:hover {\n"
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u"assets/undo.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon2.addFile(u"assets/undo.png", QSize(), QIcon.Normal, QIcon.On)
-        self.button_redo.setIcon(icon2)
-        self.button_redo.setIconSize(QSize(20, 20))
+        icon2.addFile(u":/icons/assets/icons/undo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.button_undo.setIcon(icon2)
+        self.button_undo.setIconSize(QSize(20, 20))
 
-        self.verticalLayout_10.addWidget(self.button_redo)
+        self.verticalLayout_10.addWidget(self.button_undo)
 
 
         self.horizontalLayout.addWidget(self.frame_undo)
@@ -172,18 +172,18 @@ class Ui_Tuxpen(object):
         self.frame_redo.setFrameShadow(QFrame.Raised)
         self.verticalLayout_9 = QVBoxLayout(self.frame_redo)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.button_undo = QPushButton(self.frame_redo)
-        self.button_undo.setObjectName(u"button_undo")
-        self.button_undo.setCursor(QCursor(Qt.PointingHandCursor))
-        self.button_undo.setStyleSheet(u"QPushButton:hover {\n"
+        self.button_redo = QPushButton(self.frame_redo)
+        self.button_redo.setObjectName(u"button_redo")
+        self.button_redo.setCursor(QCursor(Qt.PointingHandCursor))
+        self.button_redo.setStyleSheet(u"QPushButton:hover {\n"
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon3 = QIcon()
-        icon3.addFile(u"assets/redo.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.button_undo.setIcon(icon3)
-        self.button_undo.setIconSize(QSize(20, 20))
+        icon3.addFile(u":/icons/assets/icons/redo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.button_redo.setIcon(icon3)
+        self.button_redo.setIconSize(QSize(20, 20))
 
-        self.verticalLayout_9.addWidget(self.button_undo)
+        self.verticalLayout_9.addWidget(self.button_redo)
 
 
         self.horizontalLayout.addWidget(self.frame_redo)
@@ -204,7 +204,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon4 = QIcon()
-        icon4.addFile(u"assets/delete.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/icons/assets/icons/delete.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_clear.setIcon(icon4)
         self.button_clear.setIconSize(QSize(24, 24))
 
@@ -226,7 +226,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon5 = QIcon()
-        icon5.addFile(u"assets/close.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/icons/assets/icons/close.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_exit.setIcon(icon5)
         self.button_exit.setIconSize(QSize(24, 24))
 
@@ -360,9 +360,7 @@ class Ui_Tuxpen(object):
 
         Tuxpen.setCentralWidget(self.centralwidget)
         QWidget.setTabOrder(self.button_pen, self.button_eraser)
-        QWidget.setTabOrder(self.button_eraser, self.button_redo)
-        QWidget.setTabOrder(self.button_redo, self.button_undo)
-        QWidget.setTabOrder(self.button_undo, self.button_clear)
+        QWidget.setTabOrder(self.button_eraser, self.button_clear)
         QWidget.setTabOrder(self.button_clear, self.button_exit)
         QWidget.setTabOrder(self.button_exit, self.color_white)
         QWidget.setTabOrder(self.color_white, self.color_black)
@@ -381,8 +379,8 @@ class Ui_Tuxpen(object):
         self.label.setText(QCoreApplication.translate("Tuxpen", u"Tuxpen", None))
         self.button_pen.setText("")
         self.button_eraser.setText("")
-        self.button_redo.setText("")
         self.button_undo.setText("")
+        self.button_redo.setText("")
         self.button_clear.setText("")
         self.button_exit.setText("")
         self.color_white.setText("")

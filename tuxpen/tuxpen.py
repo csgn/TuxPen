@@ -1,23 +1,18 @@
 #!/usr/bin/env python
 
-import os
 import sys
 
-from pathlib import Path
 
-MAIN_DIR = Path(__file__).resolve().parent.parent
+def main() -> None:
+    try:
+        from tuxcore import tuxcore
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Tuxpen"
+        )
 
-
-def main():
-  try:
-    from tuxcore.tuxcore import execute
-  except ImportError as exc:
-    raise ImportError(
-      "Couldn't import Tuxpen"
-    )
-  
-  execute(sys.argv)
+    tuxcore.execute(sys.argv)
 
 
 if __name__ == '__main__':
-  main()
+    main()

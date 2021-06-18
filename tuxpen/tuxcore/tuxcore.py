@@ -12,7 +12,7 @@ from .ui import base_ui
 
 
 class Tuxcore(QtWidgets.QMainWindow):
-    def __init__(self, primaryScreen) -> None:
+    def __init__(self, primary_screen) -> None:
         QtWidgets.QMainWindow.__init__(self)
         self.ui = base_ui.Ui_Tuxpen()
         self.ui.setupUi(self)
@@ -21,12 +21,12 @@ class Tuxcore(QtWidgets.QMainWindow):
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setFixedSize(132, 430)
         self.offset = None
-        self.primaryScreen = primaryScreen
+        self.primary_screen = primary_screen
 
-        self.primaryWidth = self.primaryScreen.availableGeometry().width()
-        self.primaryHeight = self.primaryScreen.availableGeometry().height()
+        self.primary_width = self.primary_screen.availableGeometry().width()
+        self.primary_height = self.primary_screen.availableGeometry().height()
 
-        self.move(self.primaryWidth-1.0, self.primaryHeight/2.0 - 430/2)
+        self.move(self.primary_width-1.0, self.primary_height/2.0 - 430/2)
 
         self.boardWindow = None
 
@@ -77,7 +77,7 @@ class Tuxcore(QtWidgets.QMainWindow):
         sys.exit(0)
 
 
-def execute(*argv):
+def execute(*argv) -> None:
     app = QtWidgets.QApplication(*argv)
 
     window = Tuxcore(app.primaryScreen())
