@@ -6,29 +6,23 @@ from PySide6 import (
     QtWidgets,
 )
 
-from tuxboard import tuxboard
-
 from .ui import base_ui
 
 
-class Tuxcore(QtWidgets.QMainWindow):
-    def __init__(self, primary_screen) -> None:
+class TuxCore(QtWidgets.QMainWindow):
+    def __init__(self, tux_manager) -> None:
         QtWidgets.QMainWindow.__init__(self)
+
+        self.tux_manager = tux_manager
+
         self.ui = base_ui.Ui_Tuxpen()
         self.ui.setupUi(self)
-
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setFixedSize(132, 430)
+
         self.offset = None
-        self.primary_screen = primary_screen
-
-        self.primary_width = self.primary_screen.availableGeometry().width()
-        self.primary_height = self.primary_screen.availableGeometry().height()
-
-        self.move(self.primary_width-1.0, self.primary_height/2.0 - 430/2)
-
-        self.boardWindow = None
+        self.move(1920, 1080/2.0 - 430/2)
 
         self.ui.button_pen.clicked.connect(self.buttonPen)
         self.ui.button_eraser.clicked.connect(self.buttonErase)
@@ -36,6 +30,13 @@ class Tuxcore(QtWidgets.QMainWindow):
         self.ui.button_redo.clicked.connect(self.buttonRedo)
         self.ui.button_clear.clicked.connect(self.buttonClear)
         self.ui.button_exit.clicked.connect(self.buttonExit)
+
+        self.ui.color_white.clicked.connect(self.buttonColorWhite)
+        self.ui.color_black.clicked.connect(self.buttonColorBlack)
+        self.ui.color_red.clicked.connect(self.buttonColorRed)
+        self.ui.color_green.clicked.connect(self.buttonColorGreen)
+        self.ui.color_blue.clicked.connect(self.buttonColorBlue)
+        self.ui.color_yellow.clicked.connect(self.buttonColorYellow)
 
     def mousePressEvent(self, e: QtGui.QMouseEvent) -> None:
         if e.button() == QtCore.Qt.LeftButton:
@@ -53,12 +54,12 @@ class Tuxcore(QtWidgets.QMainWindow):
         self.offset = None
         super().mouseReleaseEvent(e)
 
-    def buttonPen(self):
-        if self.boardWindow:
-            if self.boardWindow.isHidden():
-                self.boardWindow.show()
+    def buttonPen(self) -> None:
+        if self.tux_manager.boardWindow:
+            if self.tux_manager.boardWindow.isHidden():
+                self.tux_manager.boardWindow.show()
             else:
-                self.boardWindow.hide()
+                self.tux_manager.boardWindow.hide()
 
     def buttonErase(self):
         ...
@@ -73,18 +74,23 @@ class Tuxcore(QtWidgets.QMainWindow):
         ...
 
     def buttonExit(self):
-        self.boardWindow.close()
+        self.tux_manager.boardWindow.close()
         sys.exit(0)
 
+    def buttonColorWhite(self):
+        self.tux_manager.boardWindow.pen.setBrush(QtCore.Qt.white)
 
-def execute(*argv) -> None:
-    app = QtWidgets.QApplication(*argv)
+    def buttonColorBlack(self):
+        self.tux_manager.boardWindow.pen.setBrush(QtCore.Qt.black)
 
-    window = Tuxcore(app.primaryScreen())
-    board = tuxboard.TuxBoard()
+    def buttonColorRed(self):
+        self.tux_manager.boardWindow.pen.setBrush(QtCore.Qt.red)
 
-    window.boardWindow = board
-    board.mainWindow = window
+    def buttonColorGreen(self):
+        self.tux_manager.boardWindow.pen.setBrush(QtCore.Qt.green)
 
-    window.show()
-    sys.exit(app.exec())
+    def buttonColorBlue(self):
+        self.tux_manager.boardWindow.pen.setBrush(QtCore.Qt.blue)
+
+    def buttonColorYellow(self):
+        self.tux_manager.boardWindow.pen.setBrush(QtCore.Qt.yellow)

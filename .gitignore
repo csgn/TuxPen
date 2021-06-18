@@ -72,6 +72,6 @@ Thumbs.db
 *.exe
 .qt_for_python/
 
-*.ui
 *.pyproject
 *.pyproject.user
+.idea

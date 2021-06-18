@@ -105,7 +105,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon = QIcon()
-        icon.addFile(u":/icons/assets/icons/pen.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/icons/pen.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_pen.setIcon(icon)
         self.button_pen.setIconSize(QSize(24, 24))
 
@@ -127,7 +127,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u":/icons/assets/icons/eraser.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/icons/icons/eraser.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_eraser.setIcon(icon1)
         self.button_eraser.setIconSize(QSize(24, 24))
 
@@ -157,7 +157,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u":/icons/assets/icons/undo.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/icons/icons/undo.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_undo.setIcon(icon2)
         self.button_undo.setIconSize(QSize(20, 20))
 
@@ -179,7 +179,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon3 = QIcon()
-        icon3.addFile(u":/icons/assets/icons/redo.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/icons/icons/redo.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_redo.setIcon(icon3)
         self.button_redo.setIconSize(QSize(20, 20))
 
@@ -204,7 +204,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon4 = QIcon()
-        icon4.addFile(u":/icons/assets/icons/delete.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/icons/icons/delete.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_clear.setIcon(icon4)
         self.button_clear.setIconSize(QSize(24, 24))
 
@@ -226,7 +226,7 @@ class Ui_Tuxpen(object):
 "	background-color: rgb(62, 62, 62);\n"
 "}")
         icon5 = QIcon()
-        icon5.addFile(u":/icons/assets/icons/close.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/icons/icons/close.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_exit.setIcon(icon5)
         self.button_exit.setIconSize(QSize(24, 24))
 

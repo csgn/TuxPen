@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>983</width>
-    <height>524</height>
+    <width>458</width>
+    <height>446</height>
    </rect>
   </property>
   <property name="font">
@@ -219,8 +219,8 @@ border-radius: 7px;</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/icons/assets/icons/pen.png</normaloff>:/icons/assets/icons/pen.png</iconset>
+                <iconset resource="../qrc/resources.qrc">
+                 <normaloff>:/icons/icons/pen.png</normaloff>:/icons/icons/pen.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -256,8 +256,8 @@ border-radius: 7px;</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/icons/assets/icons/eraser.png</normaloff>:/icons/assets/icons/eraser.png</iconset>
+                <iconset resource="../qrc/resources.qrc">
+                 <normaloff>:/icons/icons/eraser.png</normaloff>:/icons/icons/eraser.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -317,8 +317,8 @@ border-radius: 7px;</string>
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="../../resources.qrc">
-                    <normaloff>:/icons/assets/icons/undo.png</normaloff>:/icons/assets/icons/undo.png</iconset>
+                   <iconset resource="../qrc/resources.qrc">
+                    <normaloff>:/icons/icons/undo.png</normaloff>:/icons/icons/undo.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -354,8 +354,8 @@ border-radius: 7px;</string>
                    <string/>
                   </property>
                   <property name="icon">
-                   <iconset resource="../../resources.qrc">
-                    <normaloff>:/icons/assets/icons/redo.png</normaloff>:/icons/assets/icons/redo.png</iconset>
+                   <iconset resource="../qrc/resources.qrc">
+                    <normaloff>:/icons/icons/redo.png</normaloff>:/icons/icons/redo.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -394,8 +394,8 @@ border-radius: 7px;</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/icons/assets/icons/delete.png</normaloff>:/icons/assets/icons/delete.png</iconset>
+                <iconset resource="../qrc/resources.qrc">
+                 <normaloff>:/icons/icons/delete.png</normaloff>:/icons/icons/delete.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -431,8 +431,8 @@ border-radius: 7px;</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../../resources.qrc">
-                 <normaloff>:/icons/assets/icons/close.png</normaloff>:/icons/assets/icons/close.png</iconset>
+                <iconset resource="../qrc/resources.qrc">
+                 <normaloff>:/icons/icons/close.png</normaloff>:/icons/icons/close.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -674,7 +674,7 @@ QPushButton:hover {
   <tabstop>color_yellow</tabstop>
  </tabstops>
  <resources>
-  <include location="../../resources.qrc"/>
+  <include location="../qrc/resources.qrc"/>
  </resources>
  <connections/>
 </ui>
