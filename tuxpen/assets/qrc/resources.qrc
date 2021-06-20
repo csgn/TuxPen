@@ -1,10 +1,10 @@
 <RCC>
   <qresource prefix="icons">
-    <file>assets/icons/close.png</file>
-    <file>assets/icons/delete.png</file>
-    <file>assets/icons/eraser.png</file>
-    <file>assets/icons/pen.png</file>
-    <file>assets/icons/redo.png</file>
-    <file>assets/icons/undo.png</file>
+    <file>../icons/close.png</file>
+    <file>../icons/delete.png</file>
+    <file>../icons/eraser.png</file>
+    <file>../icons/pen.png</file>
+    <file>../icons/redo.png</file>
+    <file>../icons/undo.png</file>
   </qresource>
 </RCC>

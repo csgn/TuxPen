@@ -22,7 +22,9 @@ class TuxCore(QtWidgets.QMainWindow):
         self.setFixedSize(132, 430)
 
         self.offset = None
-        self.move(1920, 1080/2.0 - 430/2)
+
+        self.move(self.tux_manager.monitorWidth,
+                  self.tux_manager.monitorHeight/2.0 - (self.tux_manager.monitorHeight/2)/2)
 
         self.ui.button_pen.clicked.connect(self.buttonPen)
         self.ui.button_eraser.clicked.connect(self.buttonErase)
@@ -62,16 +64,16 @@ class TuxCore(QtWidgets.QMainWindow):
                 self.tux_manager.boardWindow.hide()
 
     def buttonErase(self):
-        ...
+        pass
 
     def buttonUndo(self):
-        ...
+        pass
 
     def buttonRedo(self):
-        ...
+        pass
 
     def buttonClear(self):
-        ...
+        pass
 
     def buttonExit(self):
         self.tux_manager.boardWindow.close()

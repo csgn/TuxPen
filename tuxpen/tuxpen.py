@@ -13,7 +13,7 @@ def main() -> None:
         )
 
     app = QtWidgets.QApplication(sys.argv)
-    wm = TuxManager()
+    wm = TuxManager(app)
     wm.coreWindow.show()
     sys.exit(app.exec())
 
