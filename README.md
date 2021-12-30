@@ -1,5 +1,6 @@
-# 🐧 Tuxpen with pyside6 (not yet completed)
+# 🐧 Tuxpen with pyqt5 (not yet completed)
 
-Java version: https://github.com/csgn/TuxPen/tree/master
-
-![alpha](docs/demo.png)
+```bash
+$ pip install -r requirements.txt
+$ python tuxpen.py
+```
